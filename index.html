@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Technical Documentation Page</title>
+    <link rel='stylesheet' href='styles.css'>
+  </head>
+
+  <body>
+    <main id='main-doc'>
+      <div class='container'>
+      <nav id="navbar">
+  <header id="header">This Page's Sections</header>
+  <ol type="I">
+  <li>
+    <div class="navd">
+      <p class="navp"><a href="#Introduction" class="nav-link">Introduction</a></p>
+    </div>
+  </li>
+  <li>
+    <div class="navd">
+      <p class="navp"><a href="#Getting_Started" class="nav-link">Getting Started</a></p>
+    </div>
+  </li>
+  <li>
+    <div class="navd">
+      <p class="navp"><a href="#Variables" class="nav-link">Variables</a></p>
+    </div>
+  </li>
+  <li>
+    <div class="navd">
+      <p class="navp"><a href="#Constants" class="nav-link">Constants</a></p>
+    </div>
+  </li>
+  <li>
+    <div class="navd">
+      <p class="navp"><a href="#Data_Types" class="nav-link">Data Types</a></p>
+    </div>
+  </li>
+  <li>
+    <div class="navd">
+      <p class="navp"><a href="#Conditional_Statements" class="nav-link">Conditional Statements</a></p>
+    </div>
+  </li>
+  <li>
+    <div class="navd">
+      <p class="navp"><a href="#Loops" class="nav-link">Loops</a></p>
+    </div>
+  </li>
+  <li>
+    <div class="navd">
+      <p class="navp"><a href="#Functions" class="nav-link">Functions</a></p>
+    </div>
+  </li>
+  <li>
+    <div class="navd">
+      <p class="navp"><a href="#Variable_Scope" class="nav-link">Variable Scope</a></p>
+    </div>
+  </li>
+  <li>
+    <div class="navd">
+      <p class="navp"><a href="#Constants_With_Objects" class="nav-link">Constants With Objects</a></p>
+    </div>
+  </li>
+  <li>
+    <div class="navd">
+      <p class="navp"><a href="#Common_Keywords" class="nav-link">Common Keywords</a></p>
+    </div>
+  </li>
+  <li>
+    <div class="navd">
+      <p class="navp"><a href="#Next_Steps_&_Learning_Resources" class="nav-link">Next Steps & Learning Resources</a></p>
+    </div>
+  </li>
+</ol>
+</nav>
+    <div class='content'>
+      <div class='h1'><h1> Python Basics: A Beginner's Guide</h1>
+      </div>
+      <section id="Introduction" class="main-section">
+  <header><h2>Introduction</h2></header>
+  <p>
+    Python is a high-level, interpreted, and general-purpose programming language. It’s known for its simple and readable syntax, making it an ideal first language for beginners. Python is widely used in web development, automation, data analysis, machine learning, and more.
+  </p>
+  <p>
+Python code is typically run using the <span class='val'>python</span> or <span class='val'>python3</span> command in a terminal or through an IDE like <a href='https://www.jetbrains.com/pycharm/' class='pycharm' target='_blank'>PyCharm</a>, <a href='https://code.visualstudio.com/' class='vscode' target='_blank'>VSCode</a>, or <a href='https://jupyter.org/' class='jupyter' target='_blank'>Jupyter Notebook</a>.
+  </p>
+</section>
+<section id="Getting_Started" class="main-section">
+  <header><h2>Getting Started</h2></header>
+  <h4>Hello, World</h4>
+  <p>To print text to the screen:</p>
+  <div class='code1'>
+    <p class='small'>python</p>
+    <div class='code2'>
+      <code>print("Hello, World")</code>
+    </div>
+  </div>
+</section>
+
+<section id="Variables" class="main-section">
+  <header><h2>Variables</h2></header>
+  <p>
+    Variables are used to store values. In Python, you don’t declare types—they are inferred automatically.
+  </p>
+  <div class='code1'>
+      <p class='small'>python</p>
+      <div class='code2'>
+        <code><span>name = "Alice"</span>
+              <span>age = 30</span>
+              <span>height = 1.75</span>
+              <span>is_student = True</span>
+        </code>
+      </div>
+    </div>
+    <p>Variable naming rules:</p>
+    <ul>
+      <li>Start with a letter or underscore (_)</li>
+      <li>Can contain letters, numbers, and underscores</li>
+      <li>Case-sensitive (<span class='val'>myVar</span> is different from <span class='val'>myvar</span>)</li>
+    </ul>
+</section>
+
+<section id="Constants" class="main-section">
+  <header><h2>Constants</h2></header>
+  <p>
+    Python has no built-in constant type. By convention, constants are written in <strong>ALL_CAPS:</strong>
+  </p>
+  <div class='code1'>
+      <p class='small'>python</p>
+      <div class='code2'>
+        <code><span>PI = 3.14159</span>
+        </code>
+      </div>
+    </div>
+    <p>
+    This value can still be changed, but you shouldn’t unless necessary.
+  </p>
+</section>
+
+<section id="Data_Types" class="main-section">
+  <header><h2>Data Types</h2></header>
+  <p>
+    Common built-in types:
+  </p>
+  <ul>
+    <li>Integer (<span class='val'>int</span>): <span class='val'>5</span></li>
+    <li>Float (<span class='val'>float</span>): <span class='val'>3.14</span></li>
+    <li>String (<span class='val'>str</span>): <span class='val'>"hello"</span></li>
+    <li>Boolean (<span class='val'>bool</span>): <span class='val'>True</span>, <span class='val'>False</span></li>
+    <li>NoneType: <span class='val'>None</span> (represents “nothing”)</li></ul>
+    <p>Collection types:</p>
+    <ul>
+      <li>List: <span class='val'>my_list = [1, 2, 3]</span></li>
+      <li>Tuple: <span class='val'>my_tuple = (1, 2)</span></li>
+      <li>Set: <span class='val'>my_set = {1, 2, 3}</span></li>
+      <li>Dictionary: <span class='val'>my_dict = {"key": "value"}</span></li></ul>
+</section>
+
+<section id="Conditional_Statements" class="main-section">
+  <header><h2>Conditional Statements</h2></header>
+  <p>
+    Use <span class='val'>if</span>, <span class='val'>elif</span>, and <span class='val'>else</span> to control flow:
+  </p>
+  <div class='code1'>
+      <p class='small'>python</p>
+      <div class='code2'>
+        <code><span>x = 10</span>
+        <span>if x > 0:</span>
+        <span>print("Positive")</span>
+        <span>elif x == 0:</span>
+        <span>print("Zero")</span>
+        <span>else:</span>
+        <span>print("Negative")</span>
+        </code>
+      </div>
+    </div>
+    <p>Indentation defines code blocks—use 4 spaces (not tabs).</p>
+</section>
+
+<section id="Loops" class="main-section">
+  <header><h2>Loops</h2></header>
+  <h4>while Loop</h4>
+  <p>
+    Executes as long as the condition is True:
+  </p>
+  <div class='code1'>
+      <p class='small'>python</p>
+      <div class='code2'>
+        <code><span>n = 0</span>
+        <span>while n < 3:</span>
+        <span>print(n)</span>
+        <span>n += 1</span>
+        </code>
+      </div>
+    </div>
+    <h4>for Loop</h4>
+  <p>
+    Used to iterate over a sequence (like a list):
+  </p>
+  <div class='code1'>
+      <p class='small'>python</p>
+      <div class='code2'>
+        <code><span>for i in range(3):</span>
+        <span>print(i)</span>
+        </code>
+      </div>
+    </div>
+    <p><span class='val'>range(3)</span> generates numbers 0, 1, 2.</p>
+</section>
+
+<section id="Functions" class="main-section">
+  <header><h2>Functions</h2></header>
+  <p>Defined using<span class='val'>def</span>:</p>
+  <div class='code1'>
+      <p class='small'>python</p>
+      <div class='code2'>
+        <code>
+        <span>def greet(name):</span>
+        <span>print("Hello, " + name)</span>
+        <span>greet("Alice")</span>
+        </code>
+      </div>
+    </div>
+    <p>You can return values:</p>
+  <div class='code1'>
+      <p class='small'>python</p>
+      <div class='code2'>
+        <code>
+        <span>def square(n):</span>
+        <span>return n * n</span>
+        </code>
+        <p>Function arguments are passed by value for primitives (numbers, strings, etc.) and by reference for mutable objects (like lists or dicts).</p>
+      </div>
+    </div>
+</section>
+
+<section id="Variable_Scope" class="main-section">
+  <header><h2>Variable Scope</h2></header>
+  <ul>
+    <li>Local variables exist only inside functions</li>
+    <li>Global variables are defined outside all functions and accessible globally.</li>
+    <div class='code1'>
+      <p class='small'>python</p>
+      <div class='code2'>
+        <code><span>x = 5  # global</span>
+              <span>def example():</span>
+              <span>x = 10  # local</span>
+              <span>print(x)</span>
+              <span>example()</span>
+              <span>print(x)  # still 5</span>
+        </code>
+      </div>
+    </div>
+    <p>To modify a global variable inside a function:</p>
+    <div class='code1'>
+      <p class='small'>python</p>
+      <div class='code2'>
+        <code><span>def change():</span>
+              <span>global x</span>
+              <span>x = 42</span>
+        </code>
+      </div>
+    </div>
+</section>
+
+<section id="Constants_With_Objects" class="main-section">
+  <header><h2>Constants With Objects</h2></header>
+  <p>
+    Even if a constant refers to an object, you can still change the object’s contents:
+  </p>
+  <div class='code1'>
+      <p class='small'>python</p>
+      <div class='code2'>
+        <code><span>MY_LIST = [1, 2, 3]</span>
+              <span>MY_LIST.append(4)  # allowed</span>
+        </code>
+      </div>
+    </div>
+</section>
+
+<section id="Common_Keywords" class="main-section">
+  <header><h2>Common Keywords</h2></header>
+  <ul>
+    <li><span class='val'>def</span>: Define a function</li>
+    <li><span class='val'>if</span>, <span class='val'>elif</span>, <span class='val'>else</span>: Conditional blocks</li>
+    <li><span class='val'>while</span>, <span class='val'>for</span>, <span class='val'>break</span>, <span class='val'>continue</span>: Looping and control</li>
+    <li><span class='val'>True</span>, <span class='val'>False</span>, <span class='val'>None</span>: Special constants</li>
+    <li><span class='val'>import</span>: Load a module</li>
+    <li><span class='val'>return</span>: Exit a function and return a value</li>
+    <li><span class='val'>global</span>: Access a global variable inside a function</li>
+  </ul>
+</section>
+
+<section id="Next_Steps_&_Learning_Resources" class="main-section">
+  <header><h2>Next Steps & Learning Resources</h2></header>
+  <h3>Next Steps</h3>
+  <p>To go deeper, explore:</p>
+  <ul>
+    <li>Lists and list comprehensions</li>
+    <li>Dictionaries and sets</li>
+    <li>File I/O</li>
+    <li>Modules and packages</li>
+    <li>Classes and OOP</li>
+    <li>Exception handling</li>
+    <li>Libraries like <span class='val'>math</span>, <span class='val'>random</span>, <span class='val'>datetime</span></li>
+  </ul>
+  <h3>Next Steps</h3>
+  <ul>
+    <li>Python Docs: <a href='https://docs.python.org/3/'>https://docs.python.org/3/</a></li>
+    <li>Interactive Tutorials: <a href='https://www.learnpython.org/'>https://www.learnpython.org/</a></li>
+    <li>Practice: <a href='https://www.w3schools.com/python/'>https://www.w3schools.com/python/</a></li>
+  </ul>
+</section>
+<div class='svb'><p><a href='https://www.instagram.com/saad_virber/'>SAAD VIRBER</a></p></div>
+    </div> 
+    </div>
+    </main>
+  </body>
+</html>
