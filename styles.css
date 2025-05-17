@@ -203,18 +203,9 @@ code {
   0%, 100% {
     background: radial-gradient(
       ellipse at center,
-      #cccccc 0%,
-      #37393b 40%,
+      #37393b 0%,
       #0e0e0f 100%
     );
   }
-  50% {
-    background: radial-gradient(
-      ellipse at center,
-      #eeeeee 0%,
-      #555555 40%,
-      #0e0e0f 100%
-    );
   }
-}
 }
