@@ -160,19 +160,17 @@ code {
   color: #80ffea;
   text-decoration: underline;
 }
-@media (max-width: 1400px) {
+@media (max-width: 800px) {
   #navbar {
     display: none;
   }
-  .content {
-    width: 100vw
-  }
-  html, body {
-  overflow-x: hidden;
-  overflow-y: auto;
-  }
+
   .container {
-    flex-direction: column;
-    height: auto;
+    flex-direction: column;  /* ✅ stack content vertically */
+  }
+
+  .content {
+    width: 100%;
+    padding: 15px;
   }
 }
