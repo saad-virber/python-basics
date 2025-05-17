@@ -16,10 +16,7 @@ html, body {
  margin-bottom: 25px;
  font-size: 1.5rem;
  padding: 10px;
-}
-
-h1 {
-  font-size: 1.6em;
+  width: 100vw;
 }
 .container {
   display: flex;
