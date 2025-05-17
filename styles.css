@@ -167,4 +167,12 @@ code {
   .content {
     width: 100vw
   }
+  html, body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  }
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
 }
