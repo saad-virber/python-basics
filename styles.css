@@ -188,8 +188,7 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: radial-gradient(
-      ellipse at center, #37393b , #0e0e0f)
+  background-image: radial-gradient(ellipse at center, #37393b , #0e0e0f)
   font-size: 1.5rem;
   padding: 10px;
   margin: 0 0 25px 0;
