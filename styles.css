@@ -184,4 +184,10 @@ code {
   * {
   box-sizing: border-box;
   }
+  .h1 {
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
 }
