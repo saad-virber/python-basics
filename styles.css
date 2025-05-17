@@ -11,7 +11,7 @@ html, body {
   display: flex; 
   justify-content: center; 
   align-items: center;
-  background-image: linear-gradient(to bottom, #37393b, #0e0e0f);
+ background-image: linear-gradient(-200deg, #37393b 1%, #0e0e0f 50%);
  margin: -20px;
  margin-bottom: 25px;
  font-size: 1.5rem;
