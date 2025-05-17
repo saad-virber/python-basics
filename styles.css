@@ -194,5 +194,27 @@ code {
   margin: 0 0 25px 0;
   width: 100%;
   box-sizing: border-box;
+  }
+  .h1 {
+  animation: lampPulse 4s infinite ease-in-out;
+}
+
+@keyframes lampPulse {
+  0%, 100% {
+    background: radial-gradient(
+      ellipse at center,
+      #cccccc 0%,
+      #37393b 40%,
+      #0e0e0f 100%
+    );
+  }
+  50% {
+    background: radial-gradient(
+      ellipse at center,
+      #eeeeee 0%,
+      #555555 40%,
+      #0e0e0f 100%
+    );
+  }
 }
 }
